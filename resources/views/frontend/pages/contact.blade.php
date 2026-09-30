@@ -60,7 +60,7 @@
                                 </p>
 
                                 <p class="mt-1 break-all text-sm text-slate-500">
-                                    info@openschooleducation.com
+                                    info@hbdlanguageacademy.com
                                 </p>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                                 </p>
 
                                 <p class="mt-1 text-sm text-slate-500">
-                                   +61 405 106 199
+                                  01978-855506
                                 </p>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                                 </p>
 
                                 <p class="mt-1 text-sm leading-6 text-slate-500">
-                                    Museum Tower, 603/267-277 Castlereagh St, Sydney NSW 2000, Australia
+                                    Standard Center, 27/1, 7th Floor, New Eskaton Road, Dhaka-1000
                                 </p>
                             </div>
                         </div>

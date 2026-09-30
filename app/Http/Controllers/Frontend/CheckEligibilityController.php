@@ -136,7 +136,7 @@ class CheckEligibilityController extends Controller
                     $message
                         ->to('mannan.hbdservices@gmail.com')
                         ->subject(
-                            'New Eligibility Application - RPL CRM'
+                            'New Eligibility Application - HBD Language Academy'
                         );
                 }
             );

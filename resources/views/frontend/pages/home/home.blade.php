@@ -727,8 +727,7 @@
 
 
                     <p class="max-w-2xl text-sm leading-6 text-brand-100 md:text-base md:leading-7">
-                        Speak directly with an accredited course counsellor about entry criteria, RPL
-                        (Recognition of Prior Learning) and campus workshop walkthroughs.
+                        Speak directly with an accredited course instructor about enrollment.
                     </p>
 
                 </div>
@@ -742,21 +741,21 @@
                     <div class="rounded-xl border border-brand-500 bg-brand-900 px-5 py-3 text-center">
 
                         <span class="block  text-[9px] font-bold uppercase tracking-widest text-brand-200">
-                            Direct Sydney Line
+                            Direct call us
                         </span>
 
                         <span class="mt-1 block font-display text-xl font-extrabold tracking-wide text-neutral-25">
-                            +61 2 8677 3600
+                            01978-855506
                         </span>
 
                     </div>
 
 
                     {{-- Campus tour --}}
-                    <a href="#prospectus"
+                    <a href="#"
                         class="inline-flex min-h-12 items-center justify-center rounded-xl bg-secondary-300 px-6 py-3  text-xs font-extrabold uppercase tracking-wide text-brand-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-200 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-secondary-300/30">
 
-                        Book Free Campus Tour
+                        Book Free
 
                     </a>
 

@@ -14,7 +14,7 @@
                 <div
                     class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-xs font-semibold uppercase tracking-wider">
                     <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
-                    How RPL Works
+                    How HBD Language Academy Works
                 </div>
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
                     4 Simple Steps to Your <span class="text-brand-600">Qualification</span>
@@ -82,7 +82,7 @@
                                     Skills Assessment
                                 </h3>
                                 <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">
-                                    An RPL assessor will review your submitted evidence and may conduct interviews or
+                                    An HBD Language Academy assessor will review your submitted evidence and may conduct interviews or
                                     practical assessments to confirm your competencies.
                                 </p>
                             </div>

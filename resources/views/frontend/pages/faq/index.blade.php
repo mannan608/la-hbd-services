@@ -60,7 +60,7 @@
                             </p>
 
 
-                            <a href="mailto:admissions@uti.edu.au"
+                            <a href="mailto:info@hbdlanguageacademy.com"
                                 class="group mt-6 flex items-center justify-between rounded-xl border border-brand-100 bg-brand-50 p-3.5 transition hover:border-brand-200 hover:bg-brand-100">
 
                                 <span class="flex items-center gap-3">
@@ -135,7 +135,7 @@
                             <a href="#"
                                 class="mt-5 inline-flex items-center gap-2 text-xs text-neutral-500 font-medium uppercase tracking-wider text-secondary-400 transition hover:text-secondary-300">
 
-                                +61 2 8677 3600
+                                01978-855506
 
                             </a>
 

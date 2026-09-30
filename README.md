@@ -1,4 +1,4 @@
-# RPL CRM
+# HBD Language Academy
 
 ### Check Your Environment
 
@@ -16,7 +16,7 @@ npm -v
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/mannan608/open-school-education.git
+git clone https://github.com/mannan608/la-hbd-services.git
 cd project name
 ```
 

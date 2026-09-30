@@ -30,7 +30,7 @@
 
             {{-- Description --}}
             <p class="mx-auto mt-5 max-w-2xl text-sm text-neutral-500 sm:text-base">
-                Please review this Privacy Policy to understand how RPL CRM collects,
+                Please review this Privacy Policy to understand how HBD Language Academy collects,
                 uses, stores, and protects your personal information.
             </p>
 
@@ -241,8 +241,8 @@
 
                         <p class="leading-relaxed">
                             This Privacy Policy outlines how
-                            <strong>RPL CRM</strong>
-                            (“RPL CRM”, “we”, “us”, or “our”) collects, holds,
+                            <strong>HBD Language Academy</strong>
+                            (“HBD Language Academy”, “we”, “us”, or “our”) collects, holds,
                             uses, and discloses your personal information in accordance with the
                             <strong>Privacy Act 1988 (Cth)</strong>
                             and the
@@ -657,7 +657,7 @@
                         </h2>
 
                         <p class="leading-relaxed">
-                            RPL CRM takes reasonable precautions to protect your
+                            HBD Language Academy takes reasonable precautions to protect your
                             personal information from misuse, interference, unauthorised access,
                             modification, or disclosure.
                         </p>
@@ -848,7 +848,7 @@
                         >
 
                             <h3 class="text-lg font-bold">
-                                RPL CRM
+                                HBD Language Academy
                             </h3>
 
                             <div class="space-y-1 text-sm text-slate-300">

@@ -796,7 +796,7 @@
                 </article>
 
 
-                <!-- RPL / CREDIT TRANSFER -->
+                <!-- HBD Language Academy / CREDIT TRANSFER -->
                 <article
                     class="rounded-2xl border border-neutral-200/80 bg-white p-6 shadow-theme-xs transition-shadow duration-300 hover:shadow-theme-sm sm:p-8"
                     data-purpose="rpl-credits">
@@ -818,7 +818,7 @@
                             </span>
 
                             <h2 class="font-heading text-xl font-bold tracking-tight text-neutral-900 sm:text-2xl">
-                                RPL &amp; Credit Transfer
+                                HBD Language Academy &amp; Credit Transfer
                             </h2>
                         </div>
 
@@ -995,7 +995,7 @@
 
                         <a href="tel:+61286773600"
                             class="font-semibold text-neutral-900 transition-colors hover:text-brand-500">
-                            +61 2 8677 3600
+                            01978-855506
                         </a>
                     </div>
 

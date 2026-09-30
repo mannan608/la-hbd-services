@@ -16,11 +16,11 @@
 
                 <h1
                     class="mb-5 font-heading text-4xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl">
-                    About RPL CRM
+                    About HBD Language Academy
                 </h1>
 
                 <p class="max-w-2xl text-sm leading-7 text-neutral-600 sm:text-base">
-                    RPL CRM (UTI) is a CRICOS-registered RTO delivering nationally recognised
+                    HBD Language Academy (UTI) is a CRICOS-registered RTO delivering nationally recognised
                     qualifications across trade, health and business.
                 </p>
 

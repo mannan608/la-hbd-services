@@ -29,7 +29,7 @@
                 <!-- Logo -->
                 <div class="p-1.5 flex items-center gap-2">
                     <a href="/" class="flex items-center gap-3 group font-semibold">
-                        <img src="{{ asset('logo.webp') }}" alt="RPL CRM" class="w-auto">
+                        <img src="{{ asset('logo.webp') }}" alt="HBD Language Academy" class="w-auto">
                     </a>
                 </div>
 

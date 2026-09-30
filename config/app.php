@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'RPL CRM'),
+    'name' => env('APP_NAME', 'HBD Language Academy'),
 
     /*
     |--------------------------------------------------------------------------

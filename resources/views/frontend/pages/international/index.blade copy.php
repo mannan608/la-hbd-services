@@ -406,7 +406,7 @@
                 </h2>
 
                 <p class="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">
-                    RPL CRM adheres to the standards defined by the ESOS Act 2000 and the
+                    HBD Language Academy adheres to the standards defined by the ESOS Act 2000 and the
                     National Code 2018. Review our operating guidelines and service commitments below.
                 </p>
 
@@ -545,7 +545,7 @@
                     </div>
 
                     <h3 class="font-heading text-lg font-bold text-white">
-                        RPL &amp; Credit Transfer
+                        HBD Language Academy &amp; Credit Transfer
                     </h3>
 
                     <p class="mt-3 text-sm leading-relaxed text-slate-400">

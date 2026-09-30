@@ -40,7 +40,7 @@
                     </span>
 
                     <h2 class="mt-3 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-4xl">
-                        Welcome to Get RPL CRM
+                        Welcome to Get HBD Language Academy
                     </h2>
 
                     <div class="mt-5 h-1 w-14 rounded-full bg-brand-500"></div>
@@ -49,7 +49,7 @@
                         <strong class="text-slate-900">
                             Empowering Your Career Through Recognition:
                         </strong>
-                        At RPL CRM, we specialize in transforming your real-world experience into nationally
+                        At HBD Language Academy, we specialize in transforming your real-world experience into nationally
                         recognized qualifications.
                     </p>
 

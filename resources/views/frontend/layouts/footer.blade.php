@@ -5,16 +5,15 @@
                 <div class="lg:col-span-2 flex flex-col gap-4">
                     <div class="flex items-center gap-2">
                        <a href="/" class="flex items-center gap-3 group font-semibold">
-                        <img src="{{ asset('site-logo.png') }}"  alt="RPL CRM" class="h-10 w-auto" width="123" height="114">
+                        <img src="{{ asset('site-logo.png') }}"  alt="HBD Language Academy" class="h-10 w-auto" width="123" height="114">
                         <div class="leading-tight">
-                            <div class="text-brand-600 text-lg">Universal Training</div>
+                            <div class="text-brand-600 text-lg">HBD Language Academy</div>
                             <div class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Institute</div>
                         </div>
                     </a>
                     </div>
                     <p class="text-sm text-[#40484c] max-w-md leading-relaxed">
-                        RPL CRM delivers accredited vocational training and pathway programs with
-                        rigorous academic integrity, hands-on workshop learning, and high-employability outcomes.
+                        At HBD Language Academy we are committed to transforming your dreams of international exploration into reality. Our team of seasoned Visa Consultants is dedicated to providing unparalleled guidance and support throughout your visa application.
                     </p>
                     <div class="flex flex-wrap gap-2 pt-1">
                         <div
@@ -70,22 +69,18 @@
                         Sydney Campus
                     </h4>
                     <div class="flex flex-col gap-1 text-sm text-[#40484c]">
-                        <p><strong class="text-[#1a1c19]">Address:</strong> Level 1, 410 Church Street, Parramatta, NSW
-                            2150 Australia</p>
-                        <p><strong class="text-[#1a1c19]">Phone:</strong> +61 2 8677 3600</p>
-                        <p><strong class="text-[#1a1c19]">Email:</strong> admissions@uti.edu.au</p>
+                        <p><strong class="text-[#1a1c19]">Address:</strong> Standard Center, 27/1, 7th Floor, New Eskaton Road, Dhaka-1000</p>
+                        <p><strong class="text-[#1a1c19]">Phone:</strong> 01978-855506</p>
+                        <p><strong class="text-[#1a1c19]">Email:</strong> info@hbdlanguageacademy.com</p>
                     </div>
                 </div>
             </div>
             <div
                 class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4  text-xs text-[#40484c]">
-                <p>© 2025 RPL CRM (UTI) Pty Ltd. All Rights Reserved. National Provider No: 45975 |
-                    CRICOS: 04111E.</p>
+                <p>Copyright © 2026 HBD Language Academy. All Rights Reserved.</p>
                 <div class="flex items-center gap-4 uppercase">
                     <a class="hover:text-[#1a1c19] transition-colors" href="#">Privacy Policy</a>
-                    <a class="hover:text-[#1a1c19] transition-colors" href="#">Student Handbook</a>
-                    <a class="hover:text-[#1a1c19] transition-colors" href="#">ESOS Compliance</a>
-                    <a class="hover:text-[#1a1c19] transition-colors" href="#">Complaints &amp; Appeals</a>
+                    <a class="hover:text-[#1a1c19] transition-colors" href="#">Terms &amp; Conditions</a>
                 </div>
             </div>
         </div>
