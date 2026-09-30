@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'prismjs/themes/prism.min.css';
 @import 'tailwindcss';
 @plugin "flowbite/plugin";
@@ -15,9 +15,9 @@
 
 @theme {
   --font-*: initial;
-    --font-display: 'Inter', sans-serif;
-    --font-body: 'Inter', sans-serif;
-    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-display: 'Montserrat', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+    --font-mono: 'Montserrat', sans-serif;
 
   --breakpoint-*: initial;
   --breakpoint-2xsm: 375px;
@@ -51,32 +51,33 @@
   --color-white: #ffffff;
   --color-black: #101828;
 
---color-brand-25:  #f5f9fb;
---color-brand-50:  #edf5f7;
---color-brand-100: #dbeaf0;
---color-brand-200: #bfd9e2;
---color-brand-300: #99c0ce;
---color-brand-400: #6f9faf;
---color-brand-500: #245c73;
---color-brand-600: #1f4f63;
---color-brand-700: #193f50;
---color-brand-800: #143340;
---color-brand-900: #0e252f;
---color-brand-950: #07171e;
+ --color-brand-25:  #f5f9fe;
+  --color-brand-50:  #eef5fc;
+  --color-brand-100: #d7e7f7;
+  --color-brand-200: #b8d3ef;
+  --color-brand-300: #8cb7e3;
+  --color-brand-400: #5b95d2;
+  --color-brand-500: #1968b2;
+  --color-brand-600: #155b9d;
+  --color-brand-700: #114b82;
+  --color-brand-800: #0d3c68;
+  --color-brand-900: #0a3053;
+  --color-brand-950: #061d34;
 
-/* --#182F5A */
---color-secondary-25:  #f5fafb;
---color-secondary-50:  #eef7f8;
---color-secondary-100: #dceff2;
---color-secondary-200: #c0e1e6;
---color-secondary-300: #99cbd2;
---color-secondary-400: #6fb1bc;
---color-secondary-500: #3f8c9e;
---color-secondary-600: #36798a;
---color-secondary-700: #2d6472;
---color-secondary-800: #25515d;
---color-secondary-900: #1d414a;
---color-secondary-950: #10272d;
+/* Base color: #00b1ee */
+
+--color-secondary-25:  #f5fcff;
+--color-secondary-50:  #ebf9fe;
+--color-secondary-100: #d6f2fc;
+--color-secondary-200: #afe5f9;
+--color-secondary-300: #7bd5f5;
+--color-secondary-400: #3fc3f1;
+--color-secondary-500: #00b1ee;
+--color-secondary-600: #0098d0;
+--color-secondary-700: #007eae;
+--color-secondary-800: #00658c;
+--color-secondary-900: #004d6b;
+--color-secondary-950: #003448;
 
 
 
@@ -1135,28 +1136,27 @@ pre[class*='language-'] {
     background: linear-gradient(90deg, rgba(13, 82, 181, 0.94) 0%, rgba(9, 52, 117, 0.88) 45%, rgba(15, 23, 42, 0.78) 100%);
 }
 
-.mesh-background {
+/* .mesh-background {
     background:
         radial-gradient(
             at 15% 15%,
-            rgba(191, 217, 226, 0.65),
+            rgba(140, 183, 227, 0.55),
             transparent 45%
         ),
         radial-gradient(
             at 85% 5%,
-            rgba(153, 203, 210, 0.45),
+            rgba(91, 149, 210, 0.38),
             transparent 45%
         ),
         radial-gradient(
             at 10% 90%,
-            rgba(111, 177, 188, 0.28),
+            rgba(25, 104, 178, 0.22),
             transparent 50%
         ),
         radial-gradient(
             at 90% 85%,
-            rgba(36, 92, 115, 0.12),
+            rgba(17, 75, 130, 0.14),
             transparent 45%
         ),
-        #f5f9fb;
-}
-
+        #f5f9fe;
+} */

@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <section class="relative overflow-hidden bg-brand-25">
+    <section class="relative overflow-hidden bg-secondary-500">
         {{-- Existing mesh background utility --}}
         <div class="absolute inset-0 mesh-background"></div>
 
@@ -9,82 +9,61 @@
 
             <div class="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-12 lg:gap-12">
 
-                {{-- ====================================================
-                HERO CONTENT
-            ===================================================== --}}
+                {{-- HERO CONTENT --}}
                 <div class="flex flex-col justify-between lg:col-span-7">
 
                     <div class="flex flex-col gap-5">
-
-                        {{-- Regulatory badges --}}
-                        <div class="flex flex-wrap items-center gap-2">
-
-                            <span
-                                class="inline-flex items-center gap-2 rounded-lg bg-brand-500 px-3 py-1.5  text-[11px] font-bold uppercase tracking-wide text-neutral-25">
-
-                                <span class="h-2 w-2 rounded-full bg-secondary-300"></span>
-
-                                CRICOS 04111E • Sydney Campus
-
-                            </span>
-
-                            <span
-                                class="inline-flex items-center rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5  text-[11px] font-bold uppercase tracking-wide text-neutral-800">
-
-                                RTO 45975
-
-                            </span>
-
-                        </div>
-
 
                         {{-- Main headline --}}
                         <div class="flex flex-col gap-2 pt-1">
 
                             <h1
-                                class="font-display text-4xl font-extrabold uppercase leading-[1.04] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl">
+                                class="font-display text-3xl font-extrabold uppercase leading-[1.04] tracking-tight text-white sm:text-4xl lg:text-5xl">
 
-                                Build the Career
+                                THE SMART WAY TO
 
                             </h1>
+                            <div class="flex gap-3">
 
-                            <div class="inline-block self-start -rotate-1 rounded-md bg-brand-500 px-4 py-1.5 sm:px-5">
+                                <div class="inline-block self-start -rotate-1 rounded-md bg-red-500 px-4 py-1.5 sm:px-5">
 
-                                <span
-                                    class="font-display text-4xl font-extrabold uppercase leading-[1.04] tracking-tight text-neutral-25 sm:text-5xl lg:text-6xl">
+                                    <span
+                                        class="font-display text-3xl font-extrabold uppercase leading-[1.04] tracking-tight text-white sm:text-4xl lg:text-5xl">
 
-                                    You Came For
+                                        IELTS & PTE
 
-                                </span>
+                                    </span>
 
+                                </div>
+                                <h1
+                                    class="ffont-display text-3xl font-extrabold uppercase leading-[1.04] tracking-tight text-white sm:text-4xl lg:text-5xl">
+                                    SUCCESS</h1>
                             </div>
 
                         </div>
 
 
                         {{-- Hero description --}}
-                        <p class="max-w-2xl pt-1 text-base leading-7 text-neutral-600 md:text-lg md:leading-8 max-w-xl">
+                        <p class="max-w-2xl pt-1 text-base text-white md:text-lg">
 
-                            RPL CRM trains tomorrow's tradies, carers, technicians and leaders —
-                            with hands-on courses, expert assessors and pathways into real Australian jobs.
+                            Study with experienced industry professionals who make learning easier by delivering
+                            well-structured, customized courses built around your success
 
                         </p>
 
                     </div>
 
 
-                    {{-- =================================================
-                    HERO CTA + TRUST
-                ================================================== --}}
+                    {{--  HERO CTA + TRUST --}}
                     <div class="flex flex-col gap-7 pt-8 lg:pt-12">
 
                         <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
 
                             {{-- Primary CTA --}}
                             <a href="#courses"
-                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-brand-500 px-6 py-3  text-xs font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-theme-md focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-white bg-neutral-25 px-6 py-3  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/10">
 
-                                Browse All Courses
+                                GET STARTED FOR FREE
 
                                 <span class="material-symbols-outlined text-lg">
                                     arrow_forward
@@ -95,140 +74,27 @@
 
                             {{-- Secondary CTA --}}
                             <a href="#prospectus"
-                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-brand-500 bg-neutral-25 px-6 py-3  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/10">
+                                class="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-white bg-transparent px-6 py-3  text-xs font-bold uppercase tracking-wide text-white transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:text-brand-500  hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/10">
 
                                 <span class="material-symbols-outlined text-lg">
                                     menu_book
                                 </span>
 
-                                Student Prospectus
+                                Browse All Courses
 
                             </a>
 
                         </div>
 
-
-                        {{-- Trust indicators --}}
-                        <div class="grid w-full max-w-2xl grid-cols-1 gap-5 border-t border-brand-200 pt-6 sm:grid-cols-2">
-
-                            <div class="flex items-start gap-3">
-
-                                <span class="material-symbols-outlined mt-0.5 text-2xl font-bold text-secondary-500">
-                                    verified
-                                </span>
-
-                                <div class="flex flex-col gap-0.5">
-
-                                    <span class=" text-[11px] font-bold uppercase tracking-wide text-neutral-900">
-                                        Nationally Recognised
-                                    </span>
-
-                                    <span class="text-xs leading-5 text-neutral-600">
-                                        AQF Level 3 to 6 verified
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="flex items-start gap-3">
-
-                                <span class="material-symbols-outlined mt-0.5 text-2xl font-bold text-secondary-500">
-                                    handshake
-                                </span>
-
-                                <div class="flex flex-col gap-0.5">
-
-                                    <span class=" text-[11px] font-bold uppercase tracking-wide text-neutral-900">
-                                        Work Placements
-                                    </span>
-
-                                    <span class="text-xs leading-5 text-neutral-600">
-                                        NSW host employer network
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
                     </div>
 
                 </div>
 
 
-                {{-- ====================================================
-                HERO VISUAL
-            ===================================================== --}}
-                <div
-                    class="flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:col-span-5">
+                {{-- HERO VISUAL --}}
+                <div class="overflow-hidden lg:col-span-5">
 
-                    {{-- Browser-style header --}}
-                    <div class="flex items-center justify-between border-b border-neutral-200 bg-neutral-50 px-4 py-3">
-
-                        <div class="flex items-center gap-2">
-
-                            <span class="h-2.5 w-2.5 rounded-full bg-error-500"></span>
-
-                            <span class="h-2.5 w-2.5 rounded-full bg-warning-400"></span>
-
-                            <span class="h-2.5 w-2.5 rounded-full bg-success-500"></span>
-
-                        </div>
-
-                    </div>
-
-
-                    {{-- IMPORTANT:
-                     Existing seamless crossfade hero slider preserved --}}
-                    @include('frontend.pages.home.section.hero-slider')
-
-
-                    {{-- Technical information --}}
-                    <div
-                        class="grid grid-cols-3 divide-x divide-neutral-200 border-t border-neutral-200 bg-neutral-25 text-center">
-
-                        <div class="px-2 py-4">
-
-                            <span class="block font-display text-lg font-extrabold text-brand-500">
-                                40:60
-                            </span>
-
-                            <span class=" text-[9px] font-bold uppercase tracking-wide text-neutral-600">
-                                Theory / Hands-on
-                            </span>
-
-                        </div>
-
-
-                        <div class="px-2 py-4">
-
-                            <span class="block font-display text-lg font-extrabold text-brand-500">
-                                100%
-                            </span>
-
-                            <span class=" text-[9px] font-bold uppercase tracking-wide text-neutral-600">
-                                ASQA Compliant
-                            </span>
-
-                        </div>
-
-
-                        <div class="px-2 py-4">
-
-                            <span class="block font-display text-lg font-extrabold text-brand-500">
-                                AUST
-                            </span>
-
-                            <span class=" text-[9px] font-bold uppercase tracking-wide text-neutral-600">
-                                Government Code
-                            </span>
-
-                        </div>
-
-                    </div>
+                    ghghjghj
 
                 </div>
 
@@ -237,393 +103,188 @@
         </div>
 
     </section>
-    {{-- STATISTICS --}}
-    <section class="w-full bg-neutral-25 py-14 md:py-18 lg:py-24">
 
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
-
-
-                {{-- Accreditation --}}
-                <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-                            Accreditation
-                        </span>
-
-                        <span class="h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-
-                    </div>
-
-                    <div class="flex items-baseline gap-2 py-5">
-
-                        <span class="font-display text-4xl font-extrabold tracking-tight text-brand-500">
-                            12+
-                        </span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
-                            Nationally Accredited
-                        </span>
-
-                    </div>
-
-                    <p class="text-sm leading-6 text-neutral-600">
-                        Certificate III, IV and Advanced Diploma awards recognised across Australia.
-                    </p>
-
-                </div>
-
-
-                {{-- Location --}}
-                <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-                            Location
-                        </span>
-
-                        <span class="h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-
-                    </div>
-
-                    <div class="flex items-baseline gap-2 py-5">
-
-                        <span class="font-display text-4xl font-extrabold tracking-tight text-brand-500">
-                            01
-                        </span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
-                            Sydney Campus
-                        </span>
-
-                    </div>
-
-                    <p class="text-sm leading-6 text-neutral-600">
-                        High-spec workshops, clinical simulation suites and a transport-connected campus.
-                    </p>
-
-                </div>
-
-
-                {{-- Industry --}}
-                <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-                            Industry Sectors
-                        </span>
-
-                        <span class="h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-
-                    </div>
-
-                    <div class="flex items-baseline gap-2 py-5">
-
-                        <span class="font-display text-4xl font-extrabold tracking-tight text-brand-500">
-                            03
-                        </span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
-                            High-Demand Hubs
-                        </span>
-
-                    </div>
-
-                    <p class="text-sm leading-6 text-neutral-600">
-                        Carpentry & Building, Aged & Community Care, Leadership & Operations.
-                    </p>
-
-                </div>
-
-
-                {{-- Visa --}}
-                <div
-                    class="flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex items-center justify-between border-b border-neutral-200 pb-3">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-                            Visa Status
-                        </span>
-
-                        <span class="h-2.5 w-2.5 rounded-full bg-brand-500"></span>
-
-                    </div>
-
-                    <div class="flex items-baseline gap-2 py-5">
-
-                        <span class="font-display text-4xl font-extrabold tracking-tight text-brand-500">
-                            100%
-                        </span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-wide text-secondary-600">
-                            CRICOS Student Visa
-                        </span>
-
-                    </div>
-
-                    <p class="text-sm leading-6 text-neutral-600">
-                        International study confirmation of enrolment (CoE) issuance support.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
     {{--  MARQUEE --}}
-    @include('frontend.pages.home.section.marquee')
+    {{-- @include('frontend.pages.home.section.marquee') --}}
 
 
-    {{-- ACADEMIC DISCIPLINES --}}
-    <section class="mt-8 bg-brand-100 py-14 md:mt-12 md:py-18 lg:mt-16 lg:py-24">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section class="relative overflow-hidden py-12 md:py-16 lg:py-20 bg-white">
+        <div class="mx-auto max-w-6xl px-6 lg:px-8">
 
-            <div class="mb-8 flex flex-col justify-between gap-5 border-b border-brand-200 pb-5 md:flex-row md:items-end">
-
-                <div>
-
-                    <span class=" text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
-                        01 Academic Disciplines
+            <!-- ── Header ── -->
+            <div class="mx-auto max-w-2xl text-center">
+                <span
+                    class="inline-flex items-center gap-2 rounded-full border border-secondary-200 bg-secondary-50 px-4 py-1.5 text-[13px] font-semibold tracking-wide text-secondary-700">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary-500 opacity-60"></span>
+                        <span class="relative inline-flex h-2 w-2 rounded-full bg-secondary-500"></span>
                     </span>
+                    Our Recognition
+                </span>
 
-                    <h2
-                        class="mt-2 max-w-3xl text-xl font-extrabold uppercase leading-tight tracking-tight text-neutral-950 md:text-2xl lg:text-3xl">
-                        A course for the career you imagine
-                    </h2>
-
-                </div>
-
-
-                <a href="{{ route('courses.index') }}"
-                    class="inline-flex items-center gap-1.5 self-start  text-xs font-bold uppercase tracking-wide text-brand-600 underline decoration-brand-300 underline-offset-4 transition-colors duration-300 hover:text-secondary-600 hover:decoration-secondary-400 md:self-auto">
-
-                    All Disciplines
-
-                    <span class="material-symbols-outlined text-sm">
-                        north_east
+                <h2 class="mt-3 text-4xl font-extrabold tracking-tight text-brand-950 md:text-5xl">
+                    Our <span
+                        class="relative inline-block bg-gradient-to-r from-brand-500 via-brand-500 to-brand-600 bg-clip-text text-transparent">
+                        Partners
+                        <svg class="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 120 8" fill="none"
+                            preserveAspectRatio="none">
+                            <path d="M2 6C30 2 60 2 118 5" stroke="url(#uGrad)" stroke-width="3" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="uGrad" x1="0" y1="0" x2="120" y2="0"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00b1ee" />
+                                    <stop offset="1" stop-color="#155b9d" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
                     </span>
+                </h2>
 
+                <p class="mt-4.5 text-base leading-relaxed text-brand-800/60 md:text-lg">
+                    We are proudly accredited and recognised by the world's most trusted
+                    institutions in English language assessment and education.
+                </p>
+            </div>
+
+            <!-- ── Partner Cards ── -->
+            <div class="mt-8 grid gap-6 md:mt-10 md:grid-cols-2 lg:gap-8">
+
+                <!-- Card 1: Cambridge -->
+                <a href="#"
+                    class="group flex flex-col items-center justify-center rounded-2xl border border-brand-900/5 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:border-secondary-200 hover:shadow-card-hover md:p-8">
+                    <div class="flex w-full items-center justify-center">
+                        <!-- Cambridge-style wordmark -->
+                        <div
+                            class=" p-4 flex items-center gap-4 opacity-80 grayscale transition-all duration-300 group-hover:-translate-y-0.5 group-hover:opacity-100 group-hover:grayscale-0">
+                            <img src="{{ asset('images/patner/p1.webp') }}" alt="">
+                        </div>
+                    </div>
                 </a>
 
+                <a href="#"
+                    class="group flex flex-col items-center justify-center rounded-2xl border border-brand-900/5 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:border-secondary-200 hover:shadow-card-hover md:p-8">
+                    <div class="flex w-full items-center justify-center">
+                        <!-- Cambridge-style wordmark -->
+                        <div
+                            class="flex items-center gap-4 opacity-80 grayscale transition-all duration-300 group-hover:-translate-y-0.5 group-hover:opacity-100 group-hover:grayscale-0">
+                            <img src="{{ asset('images/patner/p2.webp') }}" alt="">
+                        </div>
+                    </div>
+                </a>
             </div>
 
-
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
-
-                {{-- Card 1 --}}
-                @foreach ($categories as $category)
-                    <div
-                        class="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg">
-
-                        <div class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">
-
-                            <img src="{{ asset($category['image']) }}" alt="Australian carpenter apprentice framing timber"
-                                class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
-
-                            <div
-                                class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1  text-[10px] font-bold uppercase tracking-wide text-neutral-25">
-                                {{ $category['short_name'] }}
-                            </div>
-
-                            <div
-                                class="absolute bottom-3 right-3 rounded-md border border-neutral-200 bg-neutral-25 px-2 py-1  text-[9px] font-bold uppercase tracking-wide text-neutral-800">
-                                2 Qualifications
-                            </div>
-
-                        </div>
-
-
-                        <div class="flex flex-1 flex-col justify-between gap-6 p-6">
-
-                            <div class="flex flex-col gap-3">
-
-                                <h3
-                                    class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                                    {{ $category['name'] }}
-                                </h3>
-
-                                <p class="text-sm leading-6 text-neutral-600 line-clamp-2">
-                                    {{ $category['description'] }}
-                                </p>
-
-                            </div>
-
-
-                            <div class="flex items-center justify-between border-t border-neutral-200 pt-5">
-
-                                <div>
-
-                                    <span
-                                        class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                        Duration
-                                    </span>
-
-                                    <span class=" text-xs font-bold text-neutral-900">
-                                        1–2 Years
-                                    </span>
-
-                                </div>
-
-
-                                <a href="{{ route('category-courses', ['categoryslug' => $category['slug']]) }}"
-                                    class="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-3.5 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm">
-
-                                    Explore Trade
-
-                                    <span class="material-symbols-outlined text-sm">
-                                        arrow_forward
-                                    </span>
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                @endforeach
+            <!-- ── Trust bar ── -->
+            <div
+                class="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 border-t border-brand-900/5 pt-4 text-sm text-brand-800/60">
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5 text-secondary-500" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12l2 2 4-4m5.6 2A9 9 0 1 1 12 3a9 9 0 0 1 8.6 9Z" />
+                    </svg>
+                    Globally recognised certificates
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5 text-secondary-500" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6l4 2m5-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    25+ years of partnership
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="h-5 w-5 text-secondary-500" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 12l9-8 9 8M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10" />
+                    </svg>
+                    Trusted by 100,000+ learners
+                </div>
             </div>
 
         </div>
     </section>
-
-    {{-- MOST-ENROLLED QUALIFICATIONS --}}
     <section id="courses" class="w-full bg-neutral-50 py-14 md:py-18 lg:py-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-            <div
-                class="mb-8 flex flex-col justify-between gap-5 border-b border-neutral-200 pb-5 md:flex-row md:items-end">
-
-                <div>
-
-                    <span class=" text-[10px] font-bold uppercase tracking-[0.18em] text-secondary-600">
-                        02 Intake Selection 2025
+            <!-- ── Header ── -->
+            <div class="mx-auto max-w-2xl text-center mb-8">
+                <span
+                    class="inline-flex items-center gap-2 rounded-full border border-secondary-200 bg-secondary-50 px-4 py-1.5 text-[13px] font-semibold tracking-wide text-secondary-700">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary-500 opacity-60"></span>
+                        <span class="relative inline-flex h-2 w-2 rounded-full bg-secondary-500"></span>
                     </span>
+                    Courses
+                </span>
 
-                    <h2
-                        class="mt-2 text-xl font-extrabold uppercase leading-tight tracking-tight text-neutral-950 md:text-2xl lg:text-3xl">
-                        Most-Enrolled Qualifications
-                    </h2>
-
-                    <p class="mt-2 max-w-2xl text-sm leading-6 text-neutral-600">
-                        Direct pathway qualifications aligning with current New South Wales skills shortage priority lists.
-                    </p>
-
-                </div>
-
-
-                <div class="flex flex-wrap items-center gap-2">
-
-                    <span
-                        class="rounded-lg border border-neutral-200 bg-neutral-25 px-3 py-1.5  text-[10px] font-bold uppercase tracking-wide text-neutral-700">
-                        Term 2: May 2025
+                <h2 class="mt-3 text-4xl font-extrabold tracking-tight text-brand-950 md:text-5xl">
+                    Our <span
+                        class="relative inline-block bg-gradient-to-r from-brand-500 via-brand-500 to-brand-600 bg-clip-text text-transparent">
+                        Courses
+                        <svg class="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 120 8" fill="none"
+                            preserveAspectRatio="none">
+                            <path d="M2 6C30 2 60 2 118 5" stroke="url(#uGrad)" stroke-width="3"
+                                stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="uGrad" x1="0" y1="0" x2="120"
+                                    y2="0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#00b1ee" />
+                                    <stop offset="1" stop-color="#155b9d" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
                     </span>
+                </h2>
 
-                    <span
-                        class="rounded-lg bg-brand-500 px-3 py-1.5  text-[10px] font-bold uppercase tracking-wide text-neutral-25">
-                        Term 3: Jul 2025
-                    </span>
-
-                </div>
-
+                <p class="mt-4.5 text-base leading-relaxed text-brand-800/60 md:text-lg">
+                    We are proudly accredited and recognised by the world's most trusted
+                    institutions in English language assessment and education.
+                </p>
             </div>
+
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+
                 {{-- COURSE 1 --}}
                 <div
-                    class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+                    class="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 mb-4">
 
                         <div class="flex flex-wrap items-center justify-between gap-2">
 
-                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
-                                National Code: CPC30220
-                            </span>
-
-                            <span
-                                class="rounded-md bg-success-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-success-700">
-                                Work Placement Included
-                            </span>
+                            <div
+                                class="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-700 backdrop-blur-md dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-400">
+                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                Essential & Premium Service
+                            </div>
 
                         </div>
 
 
-                        <h4 class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Certificate III in Carpentry
-                        </h4>
+                        <h3
+                            class="text-2xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-white dark:group-hover:text-brand-400">
+                            IELTS Preparation
+                        </h3>
 
 
                         <p class="text-sm leading-6 text-neutral-600">
-                            Master timber framing, roof truss installation, formwork, wall cladding and interior
-                            finishing using industry-standard equipment under certified NSW tradespeople.
+                            Build your English skills and exam strategies to achieve your target IELTS score.
                         </p>
-
-
-                        <div class="grid grid-cols-3 gap-3 rounded-xl border-y border-neutral-200 bg-neutral-50 px-4 py-4">
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Duration
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    104 Weeks
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Location
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Sydney Campus
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Tuition Schedule
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Quarterly
-                                </span>
-
-                            </div>
-
-                        </div>
 
                     </div>
                     <div
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
-                        <span class=" text-[10px] text-neutral-500">
-                            CRICOS CODE: 108342M
-                        </span>
+                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
+                            <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
+                            Online Available
+                        </div>
 
-                        <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                        <a href="#"
+                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-transparent border border-brand-500 px-4 py-2  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                             Course Details
 
@@ -631,98 +292,49 @@
                                 chevron_right
                             </span>
 
-                        </button>
+                        </a>
 
                     </div>
                 </div>
-                {{--COURSE 2--}}
+
+                {{-- COURSE 2 --}}
                 <div
-                    class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+                    class="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 mb-4">
 
                         <div class="flex flex-wrap items-center justify-between gap-2">
 
-                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
-                                National Code: CPC50220
-                            </span>
-
-                            <span
-                                class="rounded-md bg-warning-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-warning-700">
-                                Contractor Pathway
-                            </span>
+                            <div
+                                class="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-700 backdrop-blur-md dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-400">
+                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                Essential & Premium Service
+                            </div>
 
                         </div>
 
 
-                        <h4 class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Diploma of Building & Construction
-                        </h4>
+                        <h3
+                            class="text-2xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-white dark:group-hover:text-brand-400">
+                            PTE Preparation
+                        </h3>
 
 
                         <p class="text-sm leading-6 text-neutral-600">
-                            Develop site supervision, cost estimation, structural compliance, building code inspection
-                            and contractor management expertise for mid-rise residential projects.
+                            Improve your English proficiency with focused PTE practice and test strategies.
                         </p>
 
-
-                        <div class="grid grid-cols-3 gap-3 rounded-xl border-y border-neutral-200 bg-neutral-50 px-4 py-4">
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Duration
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    52 Weeks
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Prerequisites
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Year 12 / Eq.
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Career
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Site Manager
-                                </span>
-
-                            </div>
-
-                        </div>
-
                     </div>
-
-
                     <div
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
-                        <span class=" text-[10px] text-neutral-500">
-                            CRICOS CODE: 108343K
-                        </span>
+                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
+                            <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
+                            Online Available
+                        </div>
 
-                        <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                        <a href="#"
+                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-transparent border border-brand-500 px-4 py-2  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                             Course Details
 
@@ -730,99 +342,49 @@
                                 chevron_right
                             </span>
 
-                        </button>
+                        </a>
 
                     </div>
-
                 </div>
+
                 {{-- COURSE 3 --}}
                 <div
-                    class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+                    class="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 mb-4">
 
                         <div class="flex flex-wrap items-center justify-between gap-2">
 
-                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
-                                National Code: CHC43015
-                            </span>
-
-                            <span
-                                class="rounded-md bg-success-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-success-700">
-                                120 Hrs Placement
-                            </span>
+                            <div
+                                class="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-700 backdrop-blur-md dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-400">
+                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                Essential & Premium Service
+                            </div>
 
                         </div>
 
 
-                        <h4 class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Certificate IV in Ageing Support
-                        </h4>
+                        <h3
+                            class="text-2xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-white dark:group-hover:text-brand-400">
+                            Spoken English
+                        </h3>
 
 
                         <p class="text-sm leading-6 text-neutral-600">
-                            Prepare for specialised frontline roles in residential care, individualised support and
-                            dementia management, including 120 hours of practical clinical placement.
+                            Develop confident, natural English communication for everyday and professional situations.
                         </p>
 
-
-                        <div class="grid grid-cols-3 gap-3 rounded-xl border-y border-neutral-200 bg-neutral-50 px-4 py-4">
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Duration
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    52 Weeks
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Practicum
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    120 Hours
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Demand
-                                </span>
-
-                                <span class=" text-xs font-bold text-secondary-600">
-                                    Very High
-                                </span>
-
-                            </div>
-
-                        </div>
-
                     </div>
-
-
                     <div
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
-                        <span class=" text-[10px] text-neutral-500">
-                            CRICOS CODE: 104556C
-                        </span>
+                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
+                            <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
+                            Online Available
+                        </div>
 
-                        <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                        <a href="#"
+                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-transparent border border-brand-500 px-4 py-2  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                             Course Details
 
@@ -830,99 +392,49 @@
                                 chevron_right
                             </span>
 
-                        </button>
+                        </a>
 
                     </div>
-
                 </div>
+
                 {{-- COURSE 4 --}}
                 <div
-                    class="flex flex-col justify-between gap-5 rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
+                    class="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 mb-4">
 
                         <div class="flex flex-wrap items-center justify-between gap-2">
 
-                            <span class=" text-[10px] font-bold uppercase tracking-wider text-secondary-600">
-                                National Code: CHC53315
-                            </span>
-
-                            <span
-                                class="rounded-md bg-secondary-50 px-2.5 py-1  text-[9px] font-bold uppercase tracking-wide text-secondary-700">
-                                Clinical Simulation
-                            </span>
+                            <div
+                                class="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-700 backdrop-blur-md dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-400">
+                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                Essential & Premium Service
+                            </div>
 
                         </div>
 
 
-                        <h4 class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
-                            Diploma of Mental Health
-                        </h4>
+                        <h3
+                            class="text-2xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-white dark:group-hover:text-brand-400">
+                            Writing & Grammar
+                        </h3>
 
 
                         <p class="text-sm leading-6 text-neutral-600">
-                            Develop recovery-oriented skills, non-clinical interventions, case assessment protocols
-                            and crisis-response support skills within multi-agency health frameworks.
+                            Strengthen your writing skills and master essential English grammar for clear communication.
                         </p>
 
-
-                        <div class="grid grid-cols-3 gap-3 rounded-xl border-y border-neutral-200 bg-neutral-50 px-4 py-4">
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Duration
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    78 Weeks
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Assessment
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Portfolio + Lab
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span
-                                    class="block  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                                    Delivery
-                                </span>
-
-                                <span class=" text-xs font-bold text-neutral-900">
-                                    Face-to-Face
-                                </span>
-
-                            </div>
-
-                        </div>
-
                     </div>
-
-
                     <div
                         class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
-                        <span class=" text-[10px] text-neutral-500">
-                            CRICOS CODE: 104557B
-                        </span>
+                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
+                            <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
+                            Online Available
+                        </div>
 
-                        <button type="button"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2  text-[10px] font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                        <a href="#"
+                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-transparent border border-brand-500 px-4 py-2  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
                             Course Details
 
@@ -930,16 +442,17 @@
                                 chevron_right
                             </span>
 
-                        </button>
+                        </a>
 
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-    {{-- PROSPECTUS / LEAD CAPTURE--}}
+  @include('frontend.pages.home.section.pricing')
+
+    {{-- PROSPECTUS / LEAD CAPTURE --}}
     <section id="prospectus" class="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 md:py-18 lg:px-8 lg:py-24">
         <div
             class="grid grid-cols-1 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-lg lg:grid-cols-12">
@@ -1060,7 +573,7 @@
                 </div>
 
             </div>
-            {{--RIGHT FORM --}}
+            {{-- RIGHT FORM --}}
             <div class="flex flex-col justify-center bg-neutral-25 p-6 md:p-10 lg:col-span-5">
 
                 <form class="flex flex-col gap-5"
@@ -1084,8 +597,7 @@
                     {{-- Name --}}
                     <div class="flex flex-col gap-2">
 
-                        <label for="full-name"
-                            class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
+                        <label for="full-name" class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
                             Full Legal Name *
                         </label>
 
@@ -1098,8 +610,7 @@
                     {{-- Email --}}
                     <div class="flex flex-col gap-2">
 
-                        <label for="email"
-                            class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
+                        <label for="email" class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
                             Email Address *
                         </label>
 
@@ -1178,8 +689,8 @@
         </div>
     </section>
 
-    {{-- ADMISSIONS CTA--}}
-    <section  class="w-full border-y border-brand-700 bg-brand-800 py-14 text-neutral-25 md:py-18 lg:py-20">
+    {{-- ADMISSIONS CTA --}}
+    <section class="w-full border-y border-brand-700 bg-brand-800 py-14 text-neutral-25 md:py-18 lg:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             <div class="flex flex-col items-center justify-between gap-8 lg:flex-row">
