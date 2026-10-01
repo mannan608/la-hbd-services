@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\Student\StudentController;
 use App\Http\Controllers\Frontend\CheckEligibilityController;
 use App\Http\Controllers\Frontend\ContactController;
@@ -44,6 +45,13 @@ Route::get('/check-eligibility', [CheckEligibilityController::class, 'index'])
 
 Route::post('/eligibility/submit', [CheckEligibilityController::class, 'submit'])
     ->name('eligibility.submit');
+
+Route::get('/blogs', [BlogController::class, 'index'])
+    ->name('blogs');
+
+Route::get('/blogs/{slug}', [BlogController::class, 'show'])
+    ->name('blog-details');
+
 
 //student routes
 Route::prefix('student')

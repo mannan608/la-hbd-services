@@ -1,18 +1,18 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <section class="relative overflow-hidden bg-secondary-500">
+    <section class="relative overflow-hidden bg-brand-600">
         {{-- Existing mesh background utility --}}
         <div class="absolute inset-0 mesh-background"></div>
 
-        <div class="relative mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 md:py-14 lg:px-8 lg:py-20">
+        <div class="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
             <div class="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-12 lg:gap-12">
 
                 {{-- HERO CONTENT --}}
-                <div class="flex flex-col justify-between lg:col-span-7">
+                <div class="flex flex-col justify-between lg:col-span-7 py-10 md:py-14 lg:py-20">
 
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-5 ">
 
                         {{-- Main headline --}}
                         <div class="flex flex-col gap-2 pt-1">
@@ -94,7 +94,7 @@
                 {{-- HERO VISUAL --}}
                 <div class="overflow-hidden lg:col-span-5">
 
-                    ghghjghj
+                  {{-- <img src="{{ asset('images/ielts-pte-student-group.webp') }}" alt="Happy students preparing for IELTS and PTE with laptops and books" class="max-w-full h-auto object-contain"> --}}
 
                 </div>
 
@@ -103,6 +103,8 @@
         </div>
 
     </section>
+
+    
 
     {{--  MARQUEE --}}
     {{-- @include('frontend.pages.home.section.marquee') --}}
@@ -245,212 +247,11 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
-
-                {{-- COURSE 1 --}}
-                <div
-                    class="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex flex-col gap-4 mb-4">
-
-                        <div class="flex flex-wrap items-center justify-between gap-2">
-
-                            <div
-                                class="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-700 backdrop-blur-md dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-400">
-                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                                Essential & Premium Service
-                            </div>
-
-                        </div>
-
-
-                        <h3
-                            class="text-2xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-white dark:group-hover:text-brand-400">
-                            IELTS Preparation
-                        </h3>
-
-
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Build your English skills and exam strategies to achieve your target IELTS score.
-                        </p>
-
-                    </div>
-                    <div
-                        class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
-
-                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
-                            <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
-                            Online Available
-                        </div>
-
-                        <a href="#"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-transparent border border-brand-500 px-4 py-2  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                            Course Details
-
-                            <span class="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
-
-                        </a>
-
-                    </div>
-                </div>
-
-                {{-- COURSE 2 --}}
-                <div
-                    class="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex flex-col gap-4 mb-4">
-
-                        <div class="flex flex-wrap items-center justify-between gap-2">
-
-                            <div
-                                class="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-700 backdrop-blur-md dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-400">
-                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                                Essential & Premium Service
-                            </div>
-
-                        </div>
-
-
-                        <h3
-                            class="text-2xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-white dark:group-hover:text-brand-400">
-                            PTE Preparation
-                        </h3>
-
-
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Improve your English proficiency with focused PTE practice and test strategies.
-                        </p>
-
-                    </div>
-                    <div
-                        class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
-
-                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
-                            <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
-                            Online Available
-                        </div>
-
-                        <a href="#"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-transparent border border-brand-500 px-4 py-2  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                            Course Details
-
-                            <span class="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
-
-                        </a>
-
-                    </div>
-                </div>
-
-                {{-- COURSE 3 --}}
-                <div
-                    class="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex flex-col gap-4 mb-4">
-
-                        <div class="flex flex-wrap items-center justify-between gap-2">
-
-                            <div
-                                class="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-700 backdrop-blur-md dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-400">
-                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                                Essential & Premium Service
-                            </div>
-
-                        </div>
-
-
-                        <h3
-                            class="text-2xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-white dark:group-hover:text-brand-400">
-                            Spoken English
-                        </h3>
-
-
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Develop confident, natural English communication for everyday and professional situations.
-                        </p>
-
-                    </div>
-                    <div
-                        class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
-
-                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
-                            <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
-                            Online Available
-                        </div>
-
-                        <a href="#"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-transparent border border-brand-500 px-4 py-2  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                            Course Details
-
-                            <span class="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
-
-                        </a>
-
-                    </div>
-                </div>
-
-                {{-- COURSE 4 --}}
-                <div
-                    class="group flex flex-col justify-between rounded-2xl border border-neutral-200 bg-neutral-25 p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg">
-
-                    <div class="flex flex-col gap-4 mb-4">
-
-                        <div class="flex flex-wrap items-center justify-between gap-2">
-
-                            <div
-                                class="inline-flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50/80 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-700 backdrop-blur-md dark:border-emerald-900/50 dark:bg-emerald-950/40 dark:text-emerald-400">
-                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                                Essential & Premium Service
-                            </div>
-
-                        </div>
-
-
-                        <h3
-                            class="text-2xl font-bold tracking-tight text-slate-900 transition-colors group-hover:text-brand-600 dark:text-white dark:group-hover:text-brand-400">
-                            Writing & Grammar
-                        </h3>
-
-
-                        <p class="text-sm leading-6 text-neutral-600">
-                            Strengthen your writing skills and master essential English grammar for clear communication.
-                        </p>
-
-                    </div>
-                    <div
-                        class="flex flex-col gap-3 border-t border-neutral-200 pt-4 sm:flex-row sm:items-center sm:justify-between">
-
-                        <div class="flex items-center gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
-                            <span class="flex h-2 w-2 rounded-full bg-brand-500"></span>
-                            Online Available
-                        </div>
-
-                        <a href="#"
-                            class="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-lg bg-transparent border border-brand-500 px-4 py-2  text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                            Course Details
-
-                            <span class="material-symbols-outlined text-sm">
-                                chevron_right
-                            </span>
-
-                        </a>
-
-                    </div>
-                </div>
-            </div>
+            @include('frontend.pages.common.courses', ['courses' => $courses])
         </div>
     </section>
 
-  @include('frontend.pages.home.section.pricing')
+    @include('frontend.pages.home.section.pricing')
 
     {{-- PROSPECTUS / LEAD CAPTURE --}}
     <section id="prospectus" class="mx-auto w-full max-w-7xl px-4 py-14 sm:px-6 md:py-18 lg:px-8 lg:py-24">
@@ -459,83 +260,69 @@
             {{--  LEFT CONTENT --}}
             <div class="flex flex-col justify-between gap-8 bg-brand-50 p-6 md:p-10 lg:col-span-7">
 
-                <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-3">
 
-                    <div class="flex flex-wrap items-center gap-2">
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-secondary-600">
-                            Documentation & Intakes
-                        </span>
-
-                        <span class="text-neutral-400">/</span>
-
-                        <span class=" text-[10px] font-bold uppercase tracking-widest text-neutral-700">
-                            2025 Calendar
-                        </span>
-
+                    <div
+                        class="inline-flex items-center gap-2 uppercase self-start rounded-full border border-neutral-200 bg-white/80 px-3.5 py-1.5 text-[10px] font-semibold tracking-wide backdrop-blur-md">
+                        <span class="flex h-2 w-2 rounded-full bg-secondary-500"></span>
+                        <span class="text-secondary-600">Dream IELTS & PTE Score</span>
+                        <span class="text-neutral-300">/</span>
+                        <span class="text-neutral-600">2026 Calendar</span>
                     </div>
+                    <h2
+                        class="max-w-xl font-extrabold text-brand-950 text-2xl tracking-tight sm:text-3xl md:text-4xl lg:leading-tight">
+                        Your Dream Score Starts at
+                        <span class="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent">HBD
+                            Language Academy</span>
+                    </h2>
 
-
-                    <h3
-                        class="max-w-2xl font-extrabold uppercase leading-tight tracking-tight text-brand-500 text-xl  md:text-2xl lg:text-3xl">
-                        Download the Official 2025 Course Booklet & Fee Schedule
-                    </h3>
-
-
-                    <p class="max-w-2xl text-sm leading-6 text-neutral-600 md:text-base md:leading-7">
-                        Receive the official institutional prospectus detailing competency unit descriptions,
-                        articulation pathways, tuition breakdowns and Department of Home Affairs student visa
-                        requirements.
+                    <!-- Lead Paragraph -->
+                    <p class="max-w-xl text-base leading-relaxed text-neutral-600">
+                        Prepare with confidence and unlock global study, migration, or career opportunities. Get structured
+                        test preparation tailored to your strengths and target score.
                     </p>
 
 
-                    <div class="flex flex-col gap-4 pt-1">
+                    <!-- Feature Bullet Points -->
+                    <div class="mt-2 flex flex-col gap-1">
 
-                        <div class="flex items-start gap-3">
-
-                            <span class="material-symbols-outlined mt-0.5 text-xl font-bold text-secondary-500">
-                                check_circle
-                            </span>
-
-                            <span class="text-sm leading-6 text-neutral-800">
-                                <strong class="font-semibold">
-                                    Transparent Fee Schedules:
-                                </strong>
-                                Material costs, uniform fees and flexible quarterly instalment timetables.
-                            </span>
-
+                        <div
+                            class="group flex items-start gap-4 rounded-xl border border-transparent p-2 transition-all hover:border-brand-100 hover:bg-white/60">
+                            <div
+                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 transition-colors group-hover:bg-brand-500 group-hover:text-white">
+                                <span class="material-symbols-outlined text-xl">workspace_premium</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-sm font-semibold text-neutral-900">Expert Guidance</h3>
+                                <p class="mt-0.5 text-sm text-neutral-600">Learn from British Council-certified
+                                    trainers with personalized strategies for every preparation stage.</p>
+                            </div>
                         </div>
 
-
-                        <div class="flex items-start gap-3">
-
-                            <span class="material-symbols-outlined mt-0.5 text-xl font-bold text-secondary-500">
-                                check_circle
-                            </span>
-
-                            <span class="text-sm leading-6 text-neutral-800">
-                                <strong class="font-semibold">
-                                    CRICOS & ESOS Standards:
-                                </strong>
-                                Mandatory hours, attendance compliance tracking and English proficiency thresholds.
-                            </span>
-
+                        <div
+                            class="group flex items-start gap-4 rounded-xl border border-transparent p-2 transition-all hover:border-brand-100 hover:bg-white/60">
+                            <div
+                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 transition-colors group-hover:bg-brand-500 group-hover:text-white">
+                                <span class="material-symbols-outlined text-xl">menu_book</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-sm font-semibold text-neutral-900">Complete Preparation</h3>
+                                <p class="mt-0.5 text-sm text-neutral-600">Master Listening, Reading, Writing, and
+                                    Speaking through targeted practice modules and full mock exams.</p>
+                            </div>
                         </div>
 
-
-                        <div class="flex items-start gap-3">
-
-                            <span class="material-symbols-outlined mt-0.5 text-xl font-bold text-secondary-500">
-                                check_circle
-                            </span>
-
-                            <span class="text-sm leading-6 text-neutral-800">
-                                <strong class="font-semibold">
-                                    Work Placement Agreements:
-                                </strong>
-                                Approved employer networks in Western Sydney and regional NSW.
-                            </span>
-
+                        <div
+                            class="group flex items-start gap-4 rounded-xl border border-transparent p-2 transition-all hover:border-brand-100 hover:bg-white/60">
+                            <div
+                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 transition-colors group-hover:bg-brand-500 group-hover:text-white">
+                                <span class="material-symbols-outlined text-xl">schedule</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-sm font-semibold text-neutral-900">Flexible Schedule</h3>
+                                <p class="mt-0.5 text-sm text-neutral-600">Choose online or in-person sessions tailored
+                                    to fit your daily routine and learning speed.</p>
+                            </div>
                         </div>
 
                     </div>
@@ -548,12 +335,12 @@
 
                     <div class="flex items-center gap-1.5">
 
-                        <span class="material-symbols-outlined text-base">
+                        <span class="material-symbols-outlined !text-sm !leading-none">
                             picture_as_pdf
                         </span>
 
                         <span>
-                            PDF (3.8 MB)
+                            Course Guide
                         </span>
 
                     </div>
@@ -563,142 +350,34 @@
                     <span>
                         Updated: January 2025
                     </span>
-
-                    <span class="text-neutral-400">•</span>
-
-                    <span>
-                        Verified ASQA VET
-                    </span>
+                    <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined !text-sm !leading-none text-emerald-500">
+                            verified
+                        </span>
+                        <span>Certified Trainers</span>
+                    </div>
 
                 </div>
 
             </div>
             {{-- RIGHT FORM --}}
-            <div class="flex flex-col justify-center bg-neutral-25 p-6 md:p-10 lg:col-span-5">
+            <div class="flex flex-col justify-center bg-neutral-25 px-6 py-4 md:px-8 md:py-6 lg:col-span-5">
 
-                <form class="flex flex-col gap-5"
-                    onsubmit="event.preventDefault(); alert('Course prospectus PDF has been dispatched to your email address.');">
-
-
-                    {{-- Form heading --}}
-                    <div class="border-b border-neutral-200 pb-4">
-
-                        <span class="font-display text-lg font-bold uppercase tracking-tight text-brand-500">
-                            Instant Access
-                        </span>
-
-                        <p class="mt-1  text-[9px] font-bold uppercase tracking-wide text-neutral-500">
-                            Direct dispatch to your primary inbox
-                        </p>
-
-                    </div>
-
-
-                    {{-- Name --}}
-                    <div class="flex flex-col gap-2">
-
-                        <label for="full-name" class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
-                            Full Legal Name *
-                        </label>
-
-                        <input id="full-name" type="text" required placeholder="e.g. Alex Henderson"
-                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5  text-sm text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10" />
-
-                    </div>
-
-
-                    {{-- Email --}}
-                    <div class="flex flex-col gap-2">
-
-                        <label for="email" class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
-                            Email Address *
-                        </label>
-
-                        <input id="email" type="email" required placeholder="name@example.com"
-                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5  text-sm text-neutral-900 placeholder:text-neutral-400 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10" />
-
-                    </div>
-
-
-                    {{-- Interest --}}
-                    <div class="flex flex-col gap-2">
-
-                        <label for="area-interest"
-                            class=" text-[10px] font-bold uppercase tracking-wide text-neutral-800">
-                            Area of Interest *
-                        </label>
-
-                        <select id="area-interest" required
-                            class="h-11 w-full rounded-lg border border-neutral-300 bg-neutral-25 px-4 py-2.5  text-sm text-neutral-900 transition-all duration-200 focus:border-brand-400 focus:bg-neutral-25 focus:outline-none focus:ring-4 focus:ring-brand-500/10">
-
-                            <option value="">
-                                Select study stream...
-                            </option>
-
-                            <option value="trade">
-                                Trade: Carpentry & Building Construction
-                            </option>
-
-                            <option value="health">
-                                Health: Aged Care & Mental Health Support
-                            </option>
-
-                            <option value="business">
-                                Business: Leadership & Operational Management
-                            </option>
-
-                            <option value="all">
-                                Full Comprehensive Multi-Discipline Guide
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    {{-- Visa checkbox --}}
-                    <div class="flex items-start gap-2.5 pt-1">
-
-                        <input id="student-visa" type="checkbox"
-                            class="mt-0.5 h-4 w-4 rounded border-neutral-300 accent-brand-500" />
-
-                        <label for="student-visa" class="cursor-pointer select-none text-xs leading-5 text-neutral-600">
-
-                            I require Australian Subclass 500 Student Visa guidance.
-
-                        </label>
-
-                    </div>
-
-
-                    {{-- Submit --}}
-                    <button type="submit"
-                        class="mt-1 inline-flex min-h-12 w-full items-center justify-center rounded-lg bg-brand-500 px-4 py-3  text-xs font-bold uppercase tracking-wide text-neutral-25 transition-all duration-300 hover:bg-brand-600 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-brand-500/20">
-
-                        Download Course Booklet (PDF)
-
-                        <span class="ml-1">
-                            →
-                        </span>
-
-                    </button>
-
-                </form>
+                @include('frontend.pages.form.booking-form')
 
             </div>
         </div>
     </section>
 
+    @include('frontend.pages.common.student-story')
+
     {{-- ADMISSIONS CTA --}}
-    <section class="w-full border-y border-brand-700 bg-brand-800 py-14 text-neutral-25 md:py-18 lg:py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section class="bg-white py-14 md:py-18 lg:py-20">
+        <div
+            class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-brand-600 py-14 text-neutral-25 md:py-18 lg:py-20 rounded-3xl">
 
             <div class="flex flex-col items-center justify-between gap-8 lg:flex-row">
-
-
-                {{-- CTA content --}}
                 <div class="flex max-w-3xl flex-col gap-3 text-center lg:text-left">
-
                     <div class="flex items-center justify-center gap-2 lg:justify-start">
 
                         <span class="relative flex h-2.5 w-2.5">
@@ -719,25 +398,17 @@
 
                     </div>
 
-
                     <h3
                         class="font-display text-3xl font-extrabold uppercase leading-tight tracking-tight text-neutral-25 md:text-4xl lg:text-5xl">
                         Have Questions About Enrolment?
                     </h3>
-
 
                     <p class="max-w-2xl text-sm leading-6 text-brand-100 md:text-base md:leading-7">
                         Speak directly with an accredited course instructor about enrollment.
                     </p>
 
                 </div>
-
-
-                {{-- CTA actions --}}
                 <div class="flex w-full shrink-0 flex-col items-stretch gap-3 sm:w-auto sm:flex-row sm:items-center">
-
-
-                    {{-- Phone --}}
                     <div class="rounded-xl border border-brand-500 bg-brand-900 px-5 py-3 text-center">
 
                         <span class="block  text-[9px] font-bold uppercase tracking-widest text-brand-200">
@@ -749,13 +420,10 @@
                         </span>
 
                     </div>
-
-
-                    {{-- Campus tour --}}
                     <a href="#"
                         class="inline-flex min-h-12 items-center justify-center rounded-xl bg-secondary-300 px-6 py-3  text-xs font-extrabold uppercase tracking-wide text-brand-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary-200 hover:shadow-theme-lg focus:outline-none focus:ring-4 focus:ring-secondary-300/30">
 
-                        Book Free
+                        Free Book Now
 
                     </a>
 
@@ -763,4 +431,6 @@
             </div>
         </div>
     </section>
+
+    @include('frontend.pages.common.why')
 @endsection
