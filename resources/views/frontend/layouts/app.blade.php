@@ -95,6 +95,7 @@
     </script>
 </head>
 <body class="min-h-screen flex flex-col">
+    @include('frontend.loader.global-loader')
     
     @include('frontend.layouts.navbar')
 
@@ -112,6 +113,7 @@
 @endauth
 
     @stack('scripts')
+    <script src="{{ asset('assets/js/global-loader.js') }}"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 

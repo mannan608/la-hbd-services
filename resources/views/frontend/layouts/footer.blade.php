@@ -5,11 +5,7 @@
                 <div class="lg:col-span-2 flex flex-col gap-4">
                     <div class="flex items-center gap-2">
                        <a href="/" class="flex items-center gap-3 group font-semibold">
-                        <img src="{{ asset('site-logo.png') }}"  alt="HBD Language Academy" class="h-10 w-auto" width="123" height="114">
-                        <div class="leading-tight">
-                            <div class="text-brand-600 text-lg">HBD Language Academy</div>
-                            <div class="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Institute</div>
-                        </div>
+                        <img src="{{ asset('logo.webp') }}"  alt="HBD Language Academy" class="w-auto">                       
                     </a>
                     </div>
                     <p class="text-sm text-[#40484c] max-w-md leading-relaxed">

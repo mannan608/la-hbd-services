@@ -12,15 +12,9 @@ class FrontendController extends Controller
 
 
     public function homePage()
-    {
-          $categories = json_decode(
-            File::get(resource_path('data/categories.json')),
-            true
-        );
+    {      
 
-        // return $categories;
-
-        return view('frontend.pages.home.home', compact('categories'));
+        return view('frontend.pages.home.home');
     }
 
     public function aboutPage()

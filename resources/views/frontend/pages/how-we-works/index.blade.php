@@ -44,7 +44,7 @@
                                     Initial Consultation
                                 </h3>
                                 <p class="mt-1.5 text-sm text-slate-600 leading-relaxed">
-                                    Contact us to discuss your experiences and career goals. Our RPL experts will guide you
+                                    Contact us to discuss your experiences and career goals. Our HBD Language Academy experts will guide you
                                     through the eligibility process.
                                 </p>
                             </div>
@@ -126,7 +126,7 @@
                     <div class="relative w-full max-w-md lg:max-w-none">
                         <div
                             class="relative z-10 rounded-3xl overflow-hidden bg-slate-100 p-2 border border-slate-200/80 shadow-2xl">
-                            <img src="{{ asset('company.jpg') }}" alt="RPL Candidate Working"
+                            <img src="{{ asset('company.jpg') }}" alt="HBD Language Academy Candidate Working"
                                 class="w-full h-auto object-cover rounded-2xl" />
                         </div>
 
