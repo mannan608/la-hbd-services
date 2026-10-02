@@ -3,9 +3,7 @@
     @foreach ($courses as $course)
         <div
             class="group flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-neutral-200/90 bg-white shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-secondary-300 hover:shadow-theme-lg"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="{{ ($loop->index % 4) * 150 + 100 }}"
+           
         >
 
             {{-- Course Image --}}
