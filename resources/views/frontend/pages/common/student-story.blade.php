@@ -133,7 +133,7 @@
         this.$nextTick(startSwiper);
     }
 }" x-init="initSwiper()"
-    class="relative overflow-hidden bg-white py-16 md:py-20 lg:py-28">
+    class="relative overflow-hidden bg-white py-12 md:py-16 lg:py-20">
     <!-- Background Decorator -->
     <div
         class="pointer-events-none absolute -top-24 left-1/2 h-96 w-full -translate-x-1/2 max-w-7xl bg-brand-500/5 blur-3xl">

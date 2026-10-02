@@ -1,4 +1,4 @@
-  <section class="bg-neutral-50 pt-12 md:pt-16 lg:pt-20 pb-12">
+  <section class="bg-white pt-12 md:pt-16 lg:pt-20 pb-12">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div 
                 class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800 p-8 sm:p-12 lg:p-16 text-white shadow-2xl border border-brand-700/50"
