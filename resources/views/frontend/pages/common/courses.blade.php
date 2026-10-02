@@ -1,8 +1,12 @@
-<div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
 
     @foreach ($courses as $course)
         <div
-            class="group flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-25 shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-theme-lg reveal-scale">
+            class="group flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-neutral-200/90 bg-white shadow-theme-xs transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-secondary-300 hover:shadow-theme-lg"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="{{ ($loop->index % 4) * 150 + 100 }}"
+        >
 
             {{-- Course Image --}}
             <div class="relative h-56 overflow-hidden border-b border-neutral-200 bg-neutral-100">
@@ -16,17 +20,17 @@
                 {{-- Course Badge --}}
                 @if ($course['essential'] && $course['premium'])
                     <div
-                        class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-neutral-25">
+                        class="absolute left-3 top-3 rounded-lg bg-secondary-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-md shadow-secondary-500/30">
                         Essential & Premium
                     </div>
                 @elseif ($course['essential'])
                     <div
-                        class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-neutral-25">
+                        class="absolute left-3 top-3 rounded-lg bg-secondary-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-md shadow-secondary-500/30">
                         Essential
                     </div>
                 @elseif ($course['premium'])
                     <div
-                        class="absolute left-3 top-3 rounded-md bg-brand-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-neutral-25">
+                        class="absolute left-3 top-3 rounded-lg bg-secondary-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-md shadow-secondary-500/30">
                         Premium
                     </div>
                 @endif
@@ -34,41 +38,41 @@
             </div>
 
             {{-- Course Content --}}
-            <div class="flex flex-1 flex-col justify-between gap-6 p-6">
+            <div class="flex flex-1 flex-col justify-between gap-6 p-6 sm:p-7">
 
                 <div class="flex flex-col gap-3">
 
                     <h3
-                        class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-500">
+                        class="font-display text-xl font-bold uppercase leading-tight tracking-tight text-brand-950 transition-colors group-hover:text-brand-600">
                         {{ $course['name'] }}
                     </h3>
 
-                    <p class="line-clamp-3 text-sm leading-6 text-neutral-600">
+                    <p class="line-clamp-3 text-sm leading-relaxed text-neutral-600">
                         {{ $course['description'] }}
                     </p>
 
                 </div>
 
                 {{-- Footer --}}
-                <div class="flex items-center justify-between border-t border-neutral-200 pt-5">
+                <div class="flex items-center justify-between border-t border-neutral-200/80 pt-5">
 
                     {{-- Online Status --}}
-                    <div class="flex items-center gap-2 text-xs font-medium text-slate-500">
+                    <div class="flex items-center gap-2 text-xs font-semibold text-neutral-600">
                         <span
-                            class="flex h-2 w-2 rounded-full {{ $course['online'] ? 'bg-brand-500' : 'bg-neutral-400' }}">
+                            class="flex h-2.5 w-2.5 rounded-full {{ $course['online'] ? 'bg-emerald-500 shadow-xs' : 'bg-neutral-400' }}">
                         </span>
 
-                        {{ $course['online'] ? 'Online Available' : 'Online Unavailable' }}
+                        {{ $course['online'] ? 'Online Available' : 'On-Campus Only' }}
                     </div>
 
                     {{-- Read More --}}
                     <a
                         href="{{ url('/courses/' . $course['slug']) }}"
-                        class="inline-flex items-center justify-center gap-1.5 rounded-lg border border-brand-500 bg-transparent px-4 py-2 text-xs font-bold uppercase tracking-wide text-brand-500 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
+                        class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-brand-500 bg-transparent px-4 py-2 text-xs font-bold uppercase tracking-wider text-brand-600 transition-all duration-300 hover:bg-brand-600 hover:text-white hover:shadow-theme-sm focus:outline-none focus:ring-4 focus:ring-brand-500/20">
 
-                        Read More
+                        <span>Read More</span>
 
-                        <span class="material-symbols-outlined !text-sm !leading-none">
+                        <span class="material-symbols-outlined !text-sm !leading-none transition-transform duration-300 group-hover:translate-x-1">
                             chevron_right
                         </span>
 

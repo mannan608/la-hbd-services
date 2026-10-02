@@ -103,32 +103,37 @@
     },
 
     initSwiper() {
-        this.$nextTick(() => {
-            new Swiper(this.$refs.swiperContainer, {
-                loop: true,
-                speed: 6000,
-                autoplay: {
-                    delay: 0,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                },
-                slidesPerView: 1,
-                spaceBetween: 24,
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 24,
+        const startSwiper = () => {
+            if (typeof Swiper !== 'undefined' && this.$refs.swiperContainer) {
+                new Swiper(this.$refs.swiperContainer, {
+                    loop: true,
+                    speed: 6000,
+                    autoplay: {
+                        delay: 0,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
                     },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 24,
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 24,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 24,
+                        },
                     },
-                },
-            });
-        });
+                });
+            } else {
+                setTimeout(startSwiper, 100);
+            }
+        };
+        this.$nextTick(startSwiper);
     }
 }" x-init="initSwiper()"
-    class="relative overflow-hidden  pt-12 md:pt-16 lg:pt-20 pb-10">
+    class="relative overflow-hidden bg-white py-16 md:py-20 lg:py-28">
     <!-- Background Decorator -->
     <div
         class="pointer-events-none absolute -top-24 left-1/2 h-96 w-full -translate-x-1/2 max-w-7xl bg-brand-500/5 blur-3xl">
@@ -136,21 +141,38 @@
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <!-- Section Header -->
-        <div class="mx-auto max-w-3xl text-center">
-            <div
-                class="inline-flex items-center gap-2 rounded-full border border-brand-200/60 bg-brand-50/80 px-3.5 py-1 text-[11px] font-bold uppercase tracking-widest text-brand-700 backdrop-blur-md">
-                <span class="material-symbols-outlined !text-sm !leading-none text-brand-600">verified</span>
-                <span>Real Results • Verified Students</span>
-            </div>
+        <!-- Standardized Section Header -->
+        <div class="mx-auto max-w-3xl text-center" data-aos="fade-up" data-aos-duration="800">
+            <span
+                class="inline-flex items-center gap-2 rounded-full border border-secondary-200 bg-secondary-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-secondary-700 shadow-xs" data-aos="fade-up" data-aos-duration="600">
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary-500 opacity-60"></span>
+                    <span class="relative inline-flex h-2 w-2 rounded-full bg-secondary-500"></span>
+                </span>
+                Student Success Stories
+            </span>
 
-            <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-neutral-900 sm:text-4xl md:text-5xl">
-                Success Stories of <span
-                    class="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent">our
-                    Students</span>
+            <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-brand-950 sm:text-4xl lg:text-5xl" data-aos="fade-up" data-aos-duration="800">
+                Real Students, Real <span
+                    class="relative inline-block bg-gradient-to-r from-brand-600 via-brand-500 to-secondary-500 bg-clip-text text-transparent">
+                    Band 8+ Scores
+                    <svg class="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 120 8" fill="none"
+                        preserveAspectRatio="none">
+                        <path d="M2 6C30 2 60 2 118 5" stroke="url(#uGradStudentStories)" stroke-width="3"
+                            stroke-linecap="round" />
+                        <defs>
+                            <linearGradient id="uGradStudentStories" x1="0" y1="0" x2="120" y2="0"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00b1ee" />
+                                <stop offset="1" stop-color="#155b9d" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
             </h2>
 
-            <p class="mt-4 text-base text-neutral-600 sm:text-lg">
+            <p class="mt-4 text-base leading-relaxed text-neutral-600 md:text-lg" data-aos="fade-up" data-aos-duration="900">
                 Discover how our structured IELTS & PTE courses helped hundreds of students achieve their target scores
                 and study abroad dreams.
             </p>

@@ -16,10 +16,10 @@
 @endphp
 
 <section class="bg-white py-12">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="px-4 sm:px-6 lg:px-8">
 
         {{-- Heading --}}
-        <div class="mb-8">
+        <div class="mb-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-duration="600">
             <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
                 Learn from world-class leading universities
             </h2>

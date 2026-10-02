@@ -1,28 +1,39 @@
-<section x-data="courseTabs()" class="bg-white py-14 md:py-18 lg:py-24">
+<section x-data="courseTabs()" class="bg-white py-16 md:py-20 lg:py-28">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        {{--  HEADER --}}
-        <div class="mx-auto mb-10 max-w-2xl text-center">
-
-            <span
-                class="mb-3 inline-flex items-center rounded-full bg-brand-50 px-4 py-1.5 text-sm font-semibold text-brand-700">
+        {{-- Standardized Section Header --}}
+        <div class="mx-auto max-w-3xl text-center mb-12 md:mb-16" data-aos="fade-up" data-aos-duration="800">
+            <span class="inline-flex items-center gap-2 rounded-full border border-secondary-200 bg-secondary-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-secondary-700 shadow-xs" data-aos="fade-up" data-aos-duration="600">
+                <span class="relative flex h-2 w-2">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary-500 opacity-60"></span>
+                    <span class="relative inline-flex h-2 w-2 rounded-full bg-secondary-500"></span>
+                </span>
                 English Language Courses
             </span>
 
-            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Choose the right course for you
+            <h2 class="mt-4 text-3xl font-extrabold tracking-tight text-brand-950 sm:text-4xl lg:text-5xl" data-aos="fade-up" data-aos-duration="800">
+                Choose the Right Course for <span class="relative inline-block bg-gradient-to-r from-brand-600 via-brand-500 to-secondary-500 bg-clip-text text-transparent">
+                    Your Goals
+                    <svg class="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 120 8" fill="none" preserveAspectRatio="none">
+                        <path d="M2 6C30 2 60 2 118 5" stroke="url(#uGradPricing)" stroke-width="3" stroke-linecap="round" />
+                        <defs>
+                            <linearGradient id="uGradPricing" x1="0" y1="0" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00b1ee" />
+                                <stop offset="1" stop-color="#155b9d" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
             </h2>
 
-            <p class="mt-4 text-base leading-7 text-slate-600">
-                Structured courses, expert guidance, practice resources and
-                exam-focused preparation to help you achieve your goals.
+            <p class="mt-4 text-base leading-relaxed text-neutral-600 md:text-lg" data-aos="fade-up" data-aos-duration="900">
+                Structured courses, expert guidance, practice resources and exam-focused preparation to help you achieve your target score.
             </p>
-
         </div>
 
 
         {{-- TABS--}}
-        <div class="mb-10 flex justify-center">
+        <div class="mb-10 flex justify-center" data-aos="fade-up" data-aos-duration="900" data-aos-delay="150">
 
             <div
                 class="flex max-w-full overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50 p-1.5 shadow-sm"
@@ -36,8 +47,8 @@
                         class="whitespace-nowrap rounded-xl px-5 py-2.5 text-sm font-semibold transition-all duration-300"
                         :class="
                             activeTab === tab.id
-                                ? 'bg-slate-900 text-white shadow-sm'
-                                : 'text-slate-600 hover:bg-white hover:text-slate-900'
+                                ? 'bg-brand-950 text-white shadow-md'
+                                : 'text-neutral-600 hover:bg-white hover:text-brand-950'
                         "
                         x-text="tab.label"
                     ></button>

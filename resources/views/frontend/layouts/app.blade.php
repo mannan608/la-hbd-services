@@ -13,9 +13,9 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Space+Grotesk:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
-
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    {{-- Also include AOS stylesheet at top of view for zero FOUC --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
     <!-- Theme Store -->
     <script>
@@ -116,6 +116,29 @@
     <script src="{{ asset('assets/js/global-loader.js') }}"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 900,
+                    easing: 'ease-out-cubic',
+                    once: true,
+                    offset: 80
+                });
+            }
+        });
+        window.addEventListener('load', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.refresh();
+            }
+        });
+        document.addEventListener('alpine:initialized', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.refresh();
+            }
+        });
+    </script>
 
 </body>
 </html>
