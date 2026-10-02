@@ -1,6 +1,6 @@
 <section class="relative overflow-hidden bg-brand-950 py-12 md:py-16 lg:py-20">
         {{-- Mesh Background & Decorative Lighting --}}
-        <div class="absolute inset-0 mesh-background opacity-70"></div>
+        <div class="absolute inset-0 opacity-70"></div>
         <div class="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-secondary-500/15 blur-3xl"></div>
         <div class="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-brand-500/25 blur-3xl"></div>
 

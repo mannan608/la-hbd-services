@@ -9,27 +9,23 @@
             <!-- Course Title -->
             <div class="max-w-4xl">
 
-                <span
-                    class="mb-3 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-secondary-600">
-                    About UTI
-                </span>
-
                 <h1
-                    class="mb-5 font-heading text-4xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-5xl lg:text-6xl">
+                    class="mb-5 font-heading text-3xl font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-4xl lg:text-5xl">
                     About HBD Language Academy
                 </h1>
 
                 <p class="max-w-2xl text-sm leading-7 text-neutral-600 sm:text-base">
-                    HBD Language Academy (UTI) is a CRICOS-registered RTO delivering nationally recognised
-                    qualifications across trade, health and business.
+                    Helping you achieve higher scores and brighter global opportunities.
                 </p>
 
             </div>
         </div>
     </section>
 
+    @include('frontend.pages.about.section')
+
     <!-- OUR MISSION ,Vision AND VALUES -->
-    <section class="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24">
+    <section class="relative overflow-hidden py-16 sm:py-20 lg:py-24">
         <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {{-- Section Heading --}}
             <div class="mx-auto mb-10 max-w-2xl text-center sm:mb-14">
@@ -96,8 +92,8 @@
                             </h3>
 
                             <p class="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
-                                Equip every student with practical skills,
-                                confidence and pathways into meaningful Australian work.
+                                We help students achieve their academic and career goals through quality English education,
+                                practical learning, and dedicated guidance.
                             </p>
 
                         </div>
@@ -160,8 +156,8 @@
                             </h3>
 
                             <p class="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
-                                Be the most trusted vocational institute for
-                                international and domestic learners across Australia.
+                                We aim to empower individuals with the English skills, confidence, and knowledge they need
+                                to build brighter futures and succeed globally.
                             </p>
 
                         </div>
@@ -223,8 +219,8 @@
                             </h3>
 
                             <p class="mt-4 text-sm leading-7 text-slate-600 sm:text-base">
-                                Integrity, inclusion, industry-relevance and care
-                                for every learner who walks through our doors.
+                                We believe in personalized learning, quality education, integrity, and continuous
+                                improvement, helping every learner reach their full potential.
                             </p>
 
                         </div>
@@ -246,189 +242,133 @@
 
     </section>
 
-    <section class="relative overflow-hidden bg-slate-950 py-20 text-white sm:py-24 lg:py-28">
+    <section class="bg-white py-16 sm:py-20 lg:py-24">
+        <div class="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
 
+            <header class="mx-auto max-w-2xl px-4 mb-12 text-center ">
 
-        {{-- Background accents --}}
-        <div class="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-brand-600/10 blur-3xl">
-        </div>
-
-        <div class="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-brand-500/10 blur-3xl">
-        </div>
-
-
-        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-            <div class="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-start lg:gap-16">
-
-
-                {{-- Left Content --}}
-                <div class="lg:col-span-5">
-
-                    <div
-                        class="mb-5 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-brand-400">
-                        <span class="h-px w-8 bg-brand-400"></span>
-                        Why UTI
-                    </div>
-
-                    <h2 class="max-w-xl text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-                       CRICOS.
-
-                        <span class="block font-light italic text-slate-400 text-2xl md:text-3xl">
-                           Registered Industry
-                        </span>
-                    </h2>
-
-                    <p class="mt-6 max-w-lg text-sm leading-7 text-slate-400 sm:text-base">
-                        A practical learning environment designed around recognised
-                        qualifications, industry expectations and meaningful career pathways.
-                    </p>
-
-                    {{-- Small trust indicator --}}
-                    <div class="mt-8 flex items-center gap-3">
-
-                        <div class="flex -space-x-2">
-                            <span
-                                class="flex h-9 w-9 items-center justify-center rounded-full border-2 border-slate-950 bg-brand-600 text-xs font-bold">
-                                U
-                            </span>
-
-                            <span
-                                class="flex h-9 w-9 items-center justify-center rounded-full border-2 border-slate-950 bg-brand-600 text-xs font-bold">
-                               T
-                            </span>
-
-                            <span
-                                class="flex h-9 w-9 items-center justify-center rounded-full border-2 border-slate-950 bg-slate-700 text-xs font-bold">
-                                I
-                            </span>
-                        </div>
-
-                        <div>
-                            <p class="text-sm font-semibold text-slate-200">
-                                Recognised & industry-focused
-                            </p>
-
-                            <p class="text-xs text-slate-500">
-                                Built around practical outcomes
-                            </p>
-                        </div>
-
-                    </div>
-
+                <div
+                    class="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest text-brand-600 shadow-sm">
+                    <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>
+                    Our commitment
                 </div>
 
+                <!-- Main Heading -->
+                <h1
+                    class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl lg:text-5xl uppercase">
+                    Our promises to you
+                </h1>
 
-                {{-- Right Features --}}
-                <div class="lg:col-span-7">
+                <!-- Subheading Description -->
+                <p
+                    class="mx-auto mt-4 max-w-2xl text-base text-neutral-600 sm:text-lg transition-all duration-700 delay-300">
+                    We are committed to making your journey simpler, clearer, and more rewarding from the first
+                    consultation to your future abroad.
+                </p>
+            </header>
+            <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
 
-                    <div class="divide-y divide-white/10 rounded-3xl border border-white/10 bg-white/[0.03] px-5 sm:px-7">
+                {{-- Image --}}
+                <div class="lg:col-span-6">
+                    <div class="group relative overflow-hidden rounded-[1.5rem]">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=80"
+                            alt="Consultation Meeting"
+                            class="h-[320px] w-full object-cover transition duration-700 group-hover:scale-105 sm:h-[380px]" />
 
-                        {{-- Item 01 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8">
+                        {{-- Image Overlay --}}
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-transparent">
+                        </div>
 
-                            <div class="shrink-0">
-                                <span
-                                    class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 font-mono text-sm font-semibold text-brand-400 transition-all duration-300 group-hover:border-brand-400/30 group-hover:bg-brand-400/10">
-                                    01
-                                </span>
+                        {{-- Image Caption --}}
+                        <div class="absolute bottom-5 left-5 right-5">
+                            <div
+                                class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md">
+                                <span class="h-2 w-2 rounded-full bg-brand-400"></span>
+                                Your journey, our commitment
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <div class="min-w-0">
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <h3 class="text-lg font-semibold text-white sm:text-xl">
-                                        CRICOS-registered courses
-                                    </h3>
+                {{-- Content --}}
+                <div class="lg:col-span-6">
+                    <!-- 2x2 Feature Grid -->
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 
-                                    <span
-                                        class="rounded-full bg-brand-400/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-brand-400">
-                                        Recognised
-                                    </span>
+                        <!-- Feature 1 -->
+                        <div class="group rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg"
+                            data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
+                                    <span class="material-symbols-outlined text-2xl">workspace_premium</span>
                                 </div>
-
-                                <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-                                    All qualifications meet ASQA and CRICOS standards for international students.
-                                </p>
+                                <h4 class="text-base font-bold text-neutral-900"> Expert Trainers</h4>
                             </div>
 
+                            <p class="mt-1 text-sm leading-relaxed text-neutral-600">
+                                Supported by 10,000+ students as the most reliable source for authentic IELTS and PTE score
+                                acceleration.
+                            </p>
                         </div>
 
-
-                        {{-- Item 02 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8">
-
-                            <div class="shrink-0">
-                                <span
-                                    class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 font-mono text-sm font-semibold text-brand-400 transition-all duration-300 group-hover:border-brand-400/30 group-hover:bg-brand-400/10">
-                                    02
-                                </span>
+                        <!-- Feature 2 -->
+                        <div class="group rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-secondary-300 hover:shadow-theme-lg"
+                            data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <div class="flex items-center gap-2">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary-50 text-secondary-600 transition-colors group-hover:bg-secondary-500 group-hover:text-white">
+                                <span class="material-symbols-outlined text-2xl">assignment_turned_in</span>
                             </div>
-
-                            <div class="min-w-0">
-                                <h3 class="text-lg font-semibold text-white sm:text-xl">
-                                    One Sydney campus
-                                </h3>
-
-                                <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-                                    North Parramatta — purpose-built classrooms, workshops and labs.
-                                </p>
+                            <h4 class="text-base font-bold text-neutral-900">Realistic Mock Tests</h4>
                             </div>
-
+                            <p class="mt-1 text-sm leading-relaxed text-neutral-600">
+                                Computer-based practice, real exam simulations, and regular mock tests to build confidence and improve performance.
+                            </p>
                         </div>
 
-
-                        {{-- Item 03 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8">
-
-                            <div class="shrink-0">
-                                <span
-                                    class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 font-mono text-sm font-semibold text-brand-400 transition-all duration-300 group-hover:border-brand-400/30 group-hover:bg-brand-400/10">
-                                    03
-                                </span>
+                        <!-- Feature 3 -->
+                        <div class="group rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-theme-lg"
+                            data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <div class="flex items-center gap-2">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-600 transition-colors group-hover:bg-brand-600 group-hover:text-white">
+                                <span class="material-symbols-outlined text-2xl">schedule</span>
                             </div>
-
-                            <div class="min-w-0">
-                                <h3 class="text-lg font-semibold text-white sm:text-xl">
-                                    Pathways that work
-                                </h3>
-
-                                <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-                                    Direct articulation into higher qualifications and Australian employment.
-                                </p>
+                            <h4 class="text-base font-bold text-neutral-900">Student Success</h4>
                             </div>
-
+                            <p class="mt-1 text-sm leading-relaxed text-neutral-600">
+                                A results-driven approach focused on helping students achieve their target scores and reach their global education and career goals.
+                            </p>
                         </div>
 
-
-                        {{-- Item 04 --}}
-                        <div class="group flex gap-5 py-7 sm:gap-7 sm:py-8">
-
-                            <div class="shrink-0">
-                                <span
-                                    class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 font-mono text-sm font-semibold text-brand-400 transition-all duration-300 group-hover:border-brand-400/30 group-hover:bg-brand-400/10">
-                                    04
-                                </span>
+                        <!-- Feature 4 -->
+                        <div class="group rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-theme-xs transition-all duration-300 hover:-translate-y-1 hover:border-secondary-300 hover:shadow-theme-lg"
+                            data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <div class="flex items-center gap-2">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary-50 text-secondary-600 transition-colors group-hover:bg-secondary-500 group-hover:text-white">
+                                <span class="material-symbols-outlined text-2xl">menu_book</span>
                             </div>
-
-                            <div class="min-w-0">
-                                <h3 class="text-lg font-semibold text-white sm:text-xl">
-                                    Experienced trainers
-                                </h3>
-
-                                <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-                                    Experienced trainers with current industry credentials.
-                                </p>
+                            <h4 class="text-base font-bold text-neutral-900">Resources</h4>
                             </div>
-
+                            <p class="mt-1 text-sm leading-relaxed text-neutral-600">
+                                Exclusive access to premium IELTS preparation ebooks, vocabulary builders, and advanced
+                                grammar materials.
+                            </p>
                         </div>
 
                     </div>
 
                 </div>
-
             </div>
 
-        </div>
 
+        </div>
     </section>
+
+    <!-- CEO MESSAGE -->
+
+    @include('frontend.pages.common.ceo')
+    @include('frontend.pages.common.cta')
 @endsection

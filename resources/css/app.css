@@ -1136,7 +1136,7 @@ pre[class*='language-'] {
     background: linear-gradient(90deg, rgba(13, 82, 181, 0.94) 0%, rgba(9, 52, 117, 0.88) 45%, rgba(15, 23, 42, 0.78) 100%);
 }
 
-/* .mesh-background {
+.mesh-background {
     background:
         radial-gradient(
             at 15% 15%,
@@ -1159,4 +1159,4 @@ pre[class*='language-'] {
             transparent 45%
         ),
         #f5f9fe;
-} */
+}

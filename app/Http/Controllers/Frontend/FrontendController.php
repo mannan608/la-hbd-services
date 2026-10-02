@@ -52,7 +52,7 @@ class FrontendController extends Controller
     }
 
     public function owner(){
-        return view('frontend.pages.teams.owner');
+        return view('frontend.pages.owner');
     }
     
       public function faqs(){
@@ -68,5 +68,6 @@ class FrontendController extends Controller
      public function ptePrograms(){
         return view('frontend.pages.courses.pte');
     }
+ 
     
 }

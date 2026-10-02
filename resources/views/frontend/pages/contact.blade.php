@@ -2,10 +2,8 @@
 
 @section('content')
 
-    <section class="relative overflow-hidden">
-    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">    
-
-
+    <section class="relative overflow-hidden mb-16">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8"> 
         <!-- Main Content -->
         <div class="mt-6 grid grid-cols-1 gap-8 md:mt-10 lg:mt-14 lg:grid-cols-[1fr_560px] lg:gap-12">
 

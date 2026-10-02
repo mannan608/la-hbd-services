@@ -37,6 +37,8 @@ Route::get('/blogs/{slug}', [BlogController::class, 'show'])
 Route::get('/online-programs', [FrontendController::class, 'onlinePrograms'])->name('online-programs');
 Route::get('/ielts', [FrontendController::class, 'ieltsPrograms'])->name('ielts');
 Route::get('/pte', [FrontendController::class, 'ptePrograms'])->name('pte');
+Route::get('/ceo', [FrontendController::class, 'owner'])->name('owner');
+
 
 
 
