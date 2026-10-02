@@ -18,6 +18,7 @@ class RolePermissionSeeder extends Seeder
 
         $permissions = [
             'dashboard.view',
+
             // User permissions
             'user.list',
             'user.view',
@@ -26,6 +27,7 @@ class RolePermissionSeeder extends Seeder
             'user.delete',
             'user.impersonate',
             'user.status.change',
+
             // Role permissions
             'role.list',
             'role.view',
@@ -34,7 +36,6 @@ class RolePermissionSeeder extends Seeder
             'role.delete',
             'role.manage',
 
-            // 'permission.list',
             // 'permission.sync',
             
             // Blog permissions
@@ -45,6 +46,7 @@ class RolePermissionSeeder extends Seeder
             'blog.delete',
             'blog.publish',
             'blog.manage',
+            
             // Event permissions
             'event.list',
             'event.view',
@@ -67,29 +69,7 @@ class RolePermissionSeeder extends Seeder
             'seo.delete',
             'seo.manage',
 
-            // University permissions
-            'university.list',
-            'university.create',
-            'university.view',
-            'university.status.change',
-            'university.edit',
-            'university.delete',
-            'university.manage',
-
-            // Campus permissions
-            'campus.list',
-            'campus.create',
-            'campus.view',
-            'campus.edit',
-            'campus.delete',
-
-            // Provider permissions
-            'provider.list',
-            'provider.create',
-            'provider.view',
-            'provider.edit',
-            'provider.delete',
-
+             
          // course-categories
             'course-categories.list',
             'course-categories.index',
@@ -107,26 +87,8 @@ class RolePermissionSeeder extends Seeder
             'course.edit',
             'course.delete',
             'course.status.change',
-
-            // Course Intake permissions
-            'course-intakes.list',
-            'course-intakes.index',
-            'course-intakes.create',
-            'course-intakes.show',
-            'course-intakes.edit',
-            'course-intakes.delete',
-            'course-intakes.status.change',
-            'course-intakes.manage',
-
-            // Scholarship permissions
-            'scholarships.list',
-            'scholarships.create',
-            'scholarships.view',
-            'scholarships.edit',
-            'scholarships.delete',
-            'scholarships.status.change',
-            'scholarships.manage',
-
+      
+          
             //contact
             'contact.list',
             'contact.view',
@@ -136,13 +98,6 @@ class RolePermissionSeeder extends Seeder
             'subscriber.list',
             'subscriber.view',
             'subscriber.delete',
-
-            //counsellors
-            'counsellors.list',
-            'counsellors.view',
-            'counsellors.create',
-            'counsellors.edit',
-            'counsellors.delete',
 
             //students
             'student.list',
@@ -191,18 +146,12 @@ class RolePermissionSeeder extends Seeder
             'name' => 'student',
             'guard_name' => config('rbac.default_guard', 'web'),
         ]);
-
-            // counsellor  role 5
-         $counsellorRole = Role::firstOrCreate([
-            'name' => 'counsellor',
-            'guard_name' => config('rbac.default_guard', 'web'),
-        ]);
+      
 
         $adminRole->syncPermissions($permissions);
         $superAdmin->syncPermissions($permissions);
         $defaultRole->syncPermissions(['dashboard.view']);
         $studentRole->syncPermissions([]);
-        $counsellorRole->syncPermissions([]);
 
         app(PermissionRegistrar::class)->forgetCachedPermissions();
     }

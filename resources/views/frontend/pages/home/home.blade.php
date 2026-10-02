@@ -6,7 +6,7 @@
     {{-- MARQUEE --}}
     @include('frontend.pages.home.section.marquee')
 
-    <section id="courses" class="w-full bg-neutral-50 py-12 md:py-16 lg:py-20 border-y border-neutral-200/60">
+    <section id="courses" class="w-full bg-neutral-50 py-12 md:py-16 lg:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {{-- Standardized Section Heading --}}
             <div class="mx-auto max-w-3xl text-center mb-12 md:mb-16">

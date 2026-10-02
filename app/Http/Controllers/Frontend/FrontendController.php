@@ -43,16 +43,7 @@ class FrontendController extends Controller
     {
         return view('frontend.pages.login');
     }
-    public function achieve(){
-        return view('frontend.pages.achieve.achieve');
-    }
-
-    public function destinations(){
-        return view('frontend.pages.destinations.index');
-    }
-     public function howWeWork(){
-        return view('frontend.pages.how-we-works.index');
-    }
+   
     public function privacyPolicy(){
         return view('frontend.pages.privacy-policy');
     }
@@ -63,18 +54,19 @@ class FrontendController extends Controller
     public function owner(){
         return view('frontend.pages.teams.owner');
     }
-     public function patners(){
-        return view('frontend.pages.patner.index');
-    }
+    
       public function faqs(){
         return view('frontend.pages.faq.index');
     }
 
-        public function internationalInquiry(){
-        return view('frontend.pages.international.index');
+    public function onlinePrograms(){
+        return view('frontend.pages.courses.online-programs');
     }
-
-    public function gsGuide(){
-        return view('frontend.pages.international.gs-guide');
+     public function ieltsPrograms(){
+        return view('frontend.pages.courses.ielts');
     }
+     public function ptePrograms(){
+        return view('frontend.pages.courses.pte');
+    }
+    
 }

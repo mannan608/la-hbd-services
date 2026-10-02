@@ -3,10 +3,8 @@
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Frontend\BlogController;
 use App\Http\Controllers\Student\StudentController;
-use App\Http\Controllers\Frontend\CheckEligibilityController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\FrontendController;
-use App\Http\Controllers\Frontend\IndustryController;
 use App\Http\Controllers\Student\ProfileController;
 use App\SEO\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
@@ -22,8 +20,6 @@ Route::get('/generate-sitemap', [SitemapController::class, 'generate']);
 
 //static pages
 Route::get('/', [FrontendController::class, 'homePage'])->name('home');
-Route::get('/how-we-works', [FrontendController::class, 'howWeWork'])->name('how-we-works');
-Route::get('/patners', [FrontendController::class, 'patners'])->name('patners');
 Route::get('/about', [FrontendController::class, 'aboutPage'])->name('about');
 Route::get('/contact', [FrontendController::class, 'contactPage'])->name('contact');
 Route::get('/faqs', [FrontendController::class, 'faqs'])->name('faqs');
@@ -32,25 +28,16 @@ Route::get('/terms-conditions', [FrontendController::class, 'termsConditions'])-
 
 Route::post('/inquiry-us', [ContactController::class, 'store'])->name('contact.store');
 
-Route::get('/courses', [IndustryController::class, 'index'])->name('courses.index');
-Route::get('/courses/categories/{categoryslug}', [IndustryController::class, 'categoryCourses'])->name('category-courses');
-Route::get('/courses/{courseslug}', [IndustryController::class, 'show'])->name('course.show');
-
-Route::get('/international-inquiry', [FrontendController::class, 'internationalInquiry'])->name('international');
-Route::get('/gs-guide', [FrontendController::class, 'gsGuide'])->name('gs-guide');
-
-
-Route::get('/check-eligibility', [CheckEligibilityController::class, 'index'])
-    ->name('eligibility');
-
-Route::post('/eligibility/submit', [CheckEligibilityController::class, 'submit'])
-    ->name('eligibility.submit');
-
 Route::get('/blogs', [BlogController::class, 'index'])
     ->name('blogs');
 
 Route::get('/blogs/{slug}', [BlogController::class, 'show'])
     ->name('blog-details');
+
+Route::get('/online-programs', [FrontendController::class, 'onlinePrograms'])->name('online-programs');
+Route::get('/ielts', [FrontendController::class, 'ieltsPrograms'])->name('ielts');
+Route::get('/pte', [FrontendController::class, 'ptePrograms'])->name('pte');
+
 
 
 //student routes

@@ -38,17 +38,10 @@ Route::prefix('{role}')
 
         Route::resource('seo', SeoController::class)
             ->middleware('permission:seo.manage');
-
         Route::resource('blogs', BlogController::class)
             ->middleware('permission:blog.manage');
-
-     
-
         Route::resource('roles-permissions', RolePermissionController::class);
-
-        Route::resource('users', UserController::class);
-       
-       
+        Route::resource('users', UserController::class);   
         Route::resource('contacts', ContactController::class);
         Route::resource('subscribers', SubscriberController::class);
         Route::get('profile', [ProfileController::class, 'edit'])->name('profile.edit');
