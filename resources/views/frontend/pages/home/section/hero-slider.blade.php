@@ -17,7 +17,7 @@
                                 <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary-400 opacity-75"></span>
                                 <span class="relative inline-flex h-2 w-2 rounded-full bg-secondary-400"></span>
                             </span>
-                            <span>British Council & Pearson Certified Academy</span>
+                            <span>mannannpm British Council & Pearson Certified Academy</span>
                         </div>
 
                         {{-- Main Headline --}}
