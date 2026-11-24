@@ -4,6 +4,7 @@
     @include('frontend.pages.home.section.hero-slider')
 
     {{-- MARQUEE --}}
+    @include('frontend.pages.common.patner')
     @include('frontend.pages.home.section.marquee')
 
     <section id="courses" class="w-full bg-neutral-50 py-12 md:py-16 lg:py-20">
